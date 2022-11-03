@@ -1,0 +1,32 @@
+{
+    "name": "wipress/routing",
+    "description": "The Wipress Routing Package For Wordpress.",
+    "license": "MIT",
+    "homepage": "https://wipress.id",
+    "support": {
+        "issues": "https://issues.wipress.com",
+        "forum": "https://discourse.wipress.id"
+    },
+    "authors": [
+        {
+            "name": "Ilham Pasya",
+            "email": "ilhampasya920@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/routing": "^8.70"
+    },
+    "autoload": {
+        "psr-4": {
+            "WIPress\\Routing\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
