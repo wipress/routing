@@ -34,6 +34,22 @@ class Route extends BaseRoute
     }
 
     /**
+     * @param  \Illuminate\Http\Request  $request
+     * @return $this
+     */
+    public function bind(Request $request)
+    {
+        $this->compileRoute();
+
+        $this->parameters = (new RouteParameterBinder($this))
+                        ->parameters($request);
+
+        $this->originalParameters = $this->parameters;
+
+        return $this;
+    }
+
+    /**
      * @return array
      */
     public static function getValidators()
