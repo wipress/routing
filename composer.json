@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/routing": "^8.70"
+        "illuminate/routing": "^9.47"
     },
     "autoload": {
         "psr-4": {
